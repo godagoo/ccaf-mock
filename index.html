@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CCA Practice Mocks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap">
+<style>
+  :root{
+    --g1:#F5F5F2; --g2:#EAEAE6; --g3:#E0E0DB;
+    --ink:#1A1A17; --ink-body:#3B3B37; --ink-soft:#8A8A86;
+    --accent:#8A3340; --card:#FFFFFF;
+    --shadow:0 1px 2px rgba(26,26,23,.04), 0 8px 28px rgba(26,26,23,.07);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:"Onest",system-ui,sans-serif;color:var(--ink);
+    background:radial-gradient(120% 120% at 30% 10%, var(--g1) 0%, var(--g2) 55%, var(--g3) 100%);
+    min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 20px;
+  }
+  .wrap{width:100%;max-width:720px;}
+  h1{font-size:clamp(32px,6vw,52px);font-weight:800;line-height:1.03;letter-spacing:-0.015em;margin-bottom:12px;}
+  .sub{font-size:clamp(16px,2.4vw,20px);color:var(--ink-body);line-height:1.4;margin-bottom:28px;}
+  .sub b{color:var(--ink);font-weight:700;}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;}
+  @media(max-width:560px){.cards{grid-template-columns:1fr;}}
+  a.card{
+    display:block;text-decoration:none;background:var(--card);border:2px solid rgba(26,26,23,.12);
+    border-radius:14px;padding:22px 22px;box-shadow:var(--shadow);transition:border-color .15s,transform .15s;
+  }
+  a.card:hover{border-color:var(--accent);transform:translateY(-2px);}
+  a.card .n{font-size:14px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;}
+  a.card .t{font-size:24px;font-weight:800;margin:6px 0 4px;color:var(--ink);}
+  a.card .d{font-size:15px;color:var(--ink-soft);line-height:1.35;}
+  .note{background:rgba(255,255,255,.55);border:2px solid rgba(26,26,23,.12);border-radius:12px;padding:16px 20px;font-size:15px;color:var(--ink-body);line-height:1.5;}
+  .note b{color:var(--ink);}
+  .foot{margin-top:22px;font-size:14px;color:var(--ink-soft);}
+  .foot a{color:var(--accent);text-decoration:none;font-weight:600;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Claude certification. Practice mocks.</h1>
+    <p class="sub">Two full 60-question timed mocks in the real exam format, built for the Autonomee community. Each runs 120 minutes, flags and strike-through work, and you get a scored breakdown by domain at the end. <b>Harder than the real thing on purpose.</b></p>
+
+    <div class="cards">
+      <a class="card" href="mock-a.html">
+        <div class="n">Mock A</div>
+        <div class="t">Hard Mock 01</div>
+        <div class="d">60 questions &#183; 120 min &#183; all five domains</div>
+      </a>
+      <a class="card" href="mock-b.html">
+        <div class="n">Mock B</div>
+        <div class="t">Hard Mock 02</div>
+        <div class="d">60 fresh questions &#183; 120 min &#183; all five domains</div>
+      </a>
+    </div>
+
+    <div class="note">
+      <b>How to use it.</b> Sit one in a single 2-hour block, no notes, like the real exam. At the end, hit <b>Download .json</b> to save your result. Your progress lives only in your own browser, nothing is sent anywhere. Do Mock A first, review your weak domains, then Mock B a few days later.
+    </div>
+
+    <p class="foot">Built by <a href="https://youtube.com/@GodaGo">@GodaGo</a> for <a href="https://autonomee.ai">Autonomee</a>. Practice aid only, not affiliated with the official exam.</p>
+  </div>
+</body>
+</html>
