@@ -24,8 +24,6 @@
   h1{font-size:clamp(32px,6vw,52px);font-weight:800;line-height:1.03;letter-spacing:-0.015em;margin-bottom:12px;}
   .sub{font-size:clamp(16px,2.4vw,20px);color:var(--ink-body);line-height:1.4;margin-bottom:28px;}
   .sub b{color:var(--ink);font-weight:700;}
-  .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;}
-  @media(max-width:560px){.cards{grid-template-columns:1fr;}}
   a.card{
     display:block;text-decoration:none;background:var(--card);border:2px solid rgba(26,26,23,.12);
     border-radius:14px;padding:22px 22px;box-shadow:var(--shadow);transition:border-color .15s,transform .15s;
@@ -34,6 +32,11 @@
   a.card .n{font-size:14px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;}
   a.card .t{font-size:24px;font-weight:800;margin:6px 0 4px;color:var(--ink);}
   a.card .d{font-size:15px;color:var(--ink-soft);line-height:1.35;}
+  a.feature{border-color:var(--accent);margin-bottom:16px;}
+  a.feature .t{font-size:28px;}
+  a.feature .d{color:var(--ink-body);font-size:16px;}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;}
+  @media(max-width:560px){.cards{grid-template-columns:1fr;}}
   .note{background:rgba(255,255,255,.55);border:2px solid rgba(26,26,23,.12);border-radius:12px;padding:16px 20px;font-size:15px;color:var(--ink-body);line-height:1.5;}
   .note b{color:var(--ink);}
   .foot{margin-top:22px;font-size:14px;color:var(--ink-soft);}
@@ -43,23 +46,29 @@
 <body>
   <div class="wrap">
     <h1>Claude certification. Practice mocks.</h1>
-    <p class="sub">Two full 60-question timed mocks in the real exam format, built for the Autonomee community. Each runs 120 minutes, flags and strike-through work, and you get a scored breakdown by domain at the end. <b>Harder than the real thing on purpose.</b></p>
+    <p class="sub">Three full 60-question timed mocks in the real exam format, built for the Autonomee community. Each runs 120 minutes, flags and strike-through work, and you get a scored breakdown by domain at the end. Start with the <b>Exam Mirror</b> for a faithful dress rehearsal. The two <b>Hard Mocks</b> run harder than the real thing on purpose.</p>
+
+    <a class="card feature" href="mock-mirror.html">
+      <div class="n">Start here</div>
+      <div class="t">Exam Mirror</div>
+      <div class="d">60 single-answer questions, matched to the real exam for length and format. Split-screen scenarios, a hideable timer, and a pace cue, just like the real thing. Sit this one to know the room before exam day.</div>
+    </a>
 
     <div class="cards">
       <a class="card" href="mock-a.html">
-        <div class="n">Mock A</div>
+        <div class="n">Over-train</div>
         <div class="t">Hard Mock 01</div>
-        <div class="d">60 questions &#183; 120 min &#183; all five domains</div>
+        <div class="d">60 questions &#183; 120 min &#183; longer stems and extra formats. Train heavy, sit light.</div>
       </a>
       <a class="card" href="mock-b.html">
-        <div class="n">Mock B</div>
+        <div class="n">Over-train</div>
         <div class="t">Hard Mock 02</div>
-        <div class="d">60 fresh questions &#183; 120 min &#183; all five domains</div>
+        <div class="d">60 fresh questions &#183; 120 min &#183; the second harder-than-real form.</div>
       </a>
     </div>
 
     <div class="note">
-      <b>How to use it.</b> Sit one in a single 2-hour block, no notes, like the real exam. At the end, hit <b>Download .json</b> to save your result. Your progress lives only in your own browser, nothing is sent anywhere. Do Mock A first, review your weak domains, then Mock B a few days later.
+      <b>How to use it.</b> Sit the Exam Mirror first, in a single 2-hour block, no notes, like the real exam. Review your weak domains from the end-of-exam breakdown. Then use Hard Mock 01 and 02 to over-train. At the end of any mock, hit <b>Download .json</b> to save your result. Your progress lives only in your own browser, and nothing is sent anywhere.
     </div>
 
     <p class="foot">Built by <a href="https://youtube.com/@GodaGo">@GodaGo</a> for <a href="https://autonomee.ai">Autonomee</a>. Practice aid only, not affiliated with the official exam.</p>
